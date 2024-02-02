@@ -22,6 +22,11 @@ wp plugin delete akismet
 wp plugin install show-current-template --activate
 wp plugin activate wp-codespace
 
+# Install KIC Private Plugins
+wp plugin install https://github.com/afragen/git-updater/archive/master.zip --activate
+wp plugin install-git https://github.com/Knowledge-Innovation-Centre/assessment-builder-v2/ --token=${{ secrets.GITHUB_TOKEN }} --github
+
+
 # Demo content for WordPress
 wp plugin install wordpress-importer --activate
 curl https://raw.githubusercontent.com/WPTT/theme-unit-test/master/themeunittestdata.wordpress.xml > demo-content.xml
