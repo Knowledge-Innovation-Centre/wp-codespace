@@ -24,7 +24,7 @@ wp plugin activate wp-codespace
 
 # Install KIC Private Plugins
 wp plugin install https://github.com/afragen/git-updater/archive/master.zip --activate
-wp plugin install-git https://github.com/Knowledge-Innovation-Centre/assessment-builder-v2/ --token=${{ secrets.GITHUB_TOKEN }} --github
+wp plugin install-git https://github.com/Knowledge-Innovation-Centre/assessment-builder-v2/ --github
 
 
 # Demo content for WordPress
